@@ -1,0 +1,20 @@
+{
+  "name": "fylo-fronedmentor-challenge",
+  "version": "1.0.0",
+  "description": "fylo project",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss style.css -w",
+    "compile:sass": "node-sass sass/main.scss style.comp.css",
+    "concat:css": "concat -o style.concat.css style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' style.concat.css -o style.prefix.css"
+  },
+  "author": "niza",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefix": "^1.0.1",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.1"
+  }
+}
